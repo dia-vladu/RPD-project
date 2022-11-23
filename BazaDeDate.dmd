@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BazaDeDate" id="A9774FAF-3F63-92B3-F89E-27858302FDA1" version="3.5">
+<createdBy>Diana</createdBy>
+<createdTime>2022-11-14 16:10:07 UTC</createdTime>
+<ownerDesignName>BazaDeDate</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A9774FAF-3F63-92B3-F89E-27858302FDA1</designId>
+</OSDM_Design>
