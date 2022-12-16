@@ -1,2 +1,2 @@
 # RPD-project
- Web application which provides bug management for an application
+ Single Page Application which provides bug management.
