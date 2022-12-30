@@ -14,29 +14,20 @@ code {
     monospace;
 }
 
-.navbar {
-  font-size: 20px;
-  background-color:cadetblue;
-  border-bottom: 5px solid whitesmoke;
-  display: flex;
-}
-
-.containerNavbarButtons {
-  margin-left: 20%;
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px 10px 30px;
+  margin: 25px;
+  margin-left: 0px;
+  border: 1px solid black;
+  display: inline-block;
   align-items: center;
 }
 
-.navbarButtons {
-  margin-right: 20px;
-  outline: none;
-  border-radius: 20%;
-  font-family: 'Tahoma';
-  font-size: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.navbarButtons:hover{
-  color: white;
-  background-color: black;
+a:hover {
+  background-color: white;
+  color: black;
+  font-size: 150%;
 }

@@ -1,0 +1,43 @@
+.formBoxLogin{
+    align-items: center;
+    max-width: 280px;
+    margin: 30px;
+    margin-left: 41.5%;
+}
+
+.loginFormTitle {
+    font-size: 30px;
+    margin: -20px;
+    margin-bottom: 100px;
+}
+
+.loginButton{
+    font-size: 40px;
+    font-family: Impact;
+    color: white;
+    -webkit-text-stroke: 0.8px black;
+    background-color: cyan;
+    border: none;
+    border-radius: 10%;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.loginButton:hover{
+    color: black;
+    -webkit-text-stroke: 0.8px white;
+    background-color: darkblue;
+}
+
+.loginTextField{
+    font-size: 19px;
+    max-width: 280px;
+    margin-left: 10px;
+    padding: 3px;
+}
+
+.loginLabel{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
