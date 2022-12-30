@@ -9,7 +9,19 @@ const Student = sequelize.define(
             primaryKey: true,
             autoIncrement: true
         },
-        name: {
+        username: {
+            type: DataTypes.STRING
+        },
+        password: {
+            type: DataTypes.STRING
+        },
+        email: {
+            type: DataTypes.STRING
+        },
+        nume: {
+            type: DataTypes.STRING
+        },
+        prenume: {
             type: DataTypes.STRING
         },
         type: {

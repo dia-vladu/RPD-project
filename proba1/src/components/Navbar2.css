@@ -1,0 +1,29 @@
+.navbar {
+    font-size: 20px;
+    background-color:cadetblue;
+    border-bottom: 5px solid whitesmoke;
+    display: flex;
+  }
+  
+  .containerNavbarButtons {
+    margin-left: 34%;
+    align-items: center;
+  }
+  
+  .navbarButtons {
+    padding: 10px 25px 10px 30px;
+    margin-top: 8px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 20%;
+    font-family: 'Tahoma';
+    font-size: 20px;
+  }
+  
+  .navbarButtons:hover{
+    color: white;
+    background-color: black;
+    font-size: 115%;
+  }
