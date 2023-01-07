@@ -3,9 +3,9 @@ import './LandingPage.css';
 
 function LandingPage(){
     return(
-        <div>
-            <h1>hello, this is the LandingPage(Home)</h1>
-            <h2>Under construction...</h2>
+        <div className='landingPageBody'>
+            <h1>Bug report single page app</h1>
+            <h2>Under VERY HEAVY construction...</h2>
         </div>
     );
 }

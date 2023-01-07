@@ -1,3 +1,13 @@
+.loginPageBody{
+    width: 1400px;
+}
+
+.logoStyle{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
 .formBoxLogin{
     align-items: center;
     max-width: 280px;
@@ -7,7 +17,7 @@
 
 .loginFormTitle {
     font-size: 30px;
-    margin: -20px;
+    margin: -30px;
     margin-bottom: 100px;
 }
 
@@ -16,28 +26,33 @@
     font-family: Impact;
     color: white;
     -webkit-text-stroke: 0.8px black;
-    background-color: cyan;
+    background-color: rgb(48, 179, 231);
     border: none;
     border-radius: 10%;
     padding: 10px;
     margin-top: 60px;
+    margin-left: -20px;
+    width: 320px;
 }
 
 .loginButton:hover{
-    color: black;
-    -webkit-text-stroke: 0.8px white;
-    background-color: darkblue;
+    background-color: rgb(42, 90, 144);
 }
 
 .loginTextField{
     font-size: 19px;
-    max-width: 280px;
-    margin-left: 10px;
+    max-width: 300px;
+    margin-left: -50px;
+    margin-bottom: 40px;
     padding: 3px;
+    border-radius: 0.3rem;
 }
 
 .loginLabel{
     font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
     font-weight: bold;
     font-family: Helvetica;
+    text-align: left;
 }

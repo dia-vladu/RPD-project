@@ -7,9 +7,10 @@ function login(){
 
 function LoginPage(){
     return(
-        <div>
+        <div className='loginPageBody'>
             <div className='formBoxLogin'>
-            <p className='loginFormTitle'>Login Form</p>
+            <p className='logoStyle'>Logo HERE</p>
+            <p className='loginFormTitle'>Sign in into your account </p>
                 <form>
                     <label className='loginLabel' for="username">Username</label>
                     <input className='loginTextField' id="username" type={"text"}/>
@@ -17,7 +18,7 @@ function LoginPage(){
                     <label className='loginLabel' for="password">Password</label>
                     <input className='loginTextField' id="password" type={"text"}/>
                     
-                    <input className='loginButton' id="loginButton" type="reset" value="Login" onClick={() => {login()}}/>
+                    <input className='loginButton' id="loginButton" type="reset" value="Sign in" onClick={() => {login()}}/>
                 </form>
             </div>
         </div>

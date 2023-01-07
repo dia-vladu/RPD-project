@@ -1,7 +1,26 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+/* .containerDayNightMode{
+  margin-top: 290px;
+}
+
+.dayNightModeButton{
+  color: white;
+  background-color: black;
+  padding: 15px;
+  border-radius: 0.1in;
+  font-size: 20px;
+}
+
+.dayNightModeButton:hover{
+  color: black;
+  font-size: 110%;
+  background-color: white;
+} */
