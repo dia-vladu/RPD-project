@@ -1,0 +1,83 @@
+[
+    {
+        "severitate": "1",
+        "prioritate": "2",
+        "link_commit": "link1",
+        "status": "Rezolvat",
+        "StudentId": 1,
+        "ProiectId": 7
+    },
+    {
+        "severitate": "3",
+        "prioritate": "3",
+        "link_commit": "link2",
+        "status": "Nerezolvat",
+        "StudentId": 1,
+        "ProiectId": 2
+    },
+    {
+        "severitate": "2",
+        "prioritate": "1",
+        "link_commit": "link3",
+        "status": "Nerezolvat",
+        "StudentId": 1,
+        "ProiectId":2
+    },
+    {
+        "severitate": "3",
+        "prioritate": "3",
+        "link_commit": "link4",
+        "status": "In Progres",
+        "ProiectId": 4
+    },
+    {
+        "severitate": "3",
+        "prioritate": "3",
+        "link_commit": "link5",
+        "status": "Nerezolvat",
+        "descriere": "I don't like the css styling for the submit button."
+        "StudentId": 3,
+        "ProiectId":2
+    },
+    {
+        "severitate": "1",
+        "prioritate": "2",
+        "link_commit": "link6",
+        "status": "Rezolvat",
+        "StudentId": 3,
+        "ProiectId":3
+    },
+    {
+        "severitate": "2",
+        "prioritate": "2",
+        "link_commit": "link7",
+        "status": "Rezolvat",
+        "descriere": "The sort function misses the ruturn statement.",
+        "ProiectId":6
+    },
+    {
+        "severitate": "1",
+        "prioritate": "2",
+        "link_commit": "link8",
+        "status": "In progres",
+        "descriere": "Variables types mismatch.",
+        "ProiectId":6
+    },
+    {
+        "severitate": "1",
+        "prioritate": "1",
+        "link_commit": "link9",
+        "status": "Rezolvat",
+        "descriere": "I found an untreated error.",
+        "StudentId": 4,
+        "ProiectId":6
+    },
+    {
+        "severitate": "3",
+        "prioritate": "1",
+        "link_commit": "link10",
+        "status": "Rezolvat",
+        "descriere": "For value 5 I receive FATAL ERROR",
+        "ProiectId": 7
+    }
+]
