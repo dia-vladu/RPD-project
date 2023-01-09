@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Navbar3.css';
 
 function switchMode(){
@@ -31,6 +31,11 @@ function switchMode(){
 
 function Navbar3() {
     const navigate = useNavigate();
+    
+    var currentPath = useLocation();
+    console.log('hash', currentPath.hash);
+    console.log('pathname', currentPath.pathname);
+    console.log('search', currentPath.search);
 
     return (
         <div className='navbar'>
