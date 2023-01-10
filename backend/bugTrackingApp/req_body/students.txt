@@ -39,7 +39,7 @@
         "prenume": "Eulet",
         "email": "eu@gmail.com",
         "tip_user": "MP",
-        "data_nasterii": "1994/12/20",
+        "data_nasterii": "1999/12/09",
         "EchipaId": 2
     },
     {

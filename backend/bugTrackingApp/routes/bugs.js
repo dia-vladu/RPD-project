@@ -39,11 +39,12 @@ router.route('/getBugs').get(async (req, res) => {
     }
 })
 
-//Metoda POST <=> Adauga mai multe buguri in acelasi timp (nu face verificari in cazul atributului StudentId) - MERGE
+//Metoda POST <=> Adauga mai multe buguri in acelasi timp - MERGE
+//By default bulkCreate nu vafe verificari => adaugam {validate: true} ca sa ne faca verificarile
 router.route('/addBugs').post(async (req, res) => {
     try {
         console.log(req.body);
-        const newBugs = await Bug.bulkCreate(req.body);
+        const newBugs = await Bug.bulkCreate(req.body, {validate: true});
         res.status(200).json(newBugs);
     } catch (error) {
         console.log(error)
@@ -111,7 +112,7 @@ router.route('/getAssignedBugs/:studentId').get(async (req, res) => {
     try {
         const bugs = await Bug.findAll({
             where: {
-                StudentId: req.params.studentId
+                id_MP: req.params.studentId
             }
         })
         if (bugs.length > 0) {

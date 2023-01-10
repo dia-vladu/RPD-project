@@ -44,12 +44,12 @@ router.route('/getProject/:id/bugs').get(checkId, async (req, res) => {
     try {
         const project = await Project.findByPk(req.params.id);
         if (project) {
-            const bugs = Bug.findAll({
+            const bugs = await Bug.findAll({
                 where: {
-                    ProjectId: req.params.id
+                    ProiectId: req.params.id
                 }
             })
-            if((await bugs).length > 0){
+            if(bugs.length > 0){
                 res.status(200).json(bugs);
             }else{
                 res.status(404).json({ error: `Project with id ${req.params.id} does not have any bugs!` })
@@ -76,7 +76,7 @@ router.route('/addProject').post(async (req, res) => {
 //Metoda POST <=> Adauga mai multe proiecte in acelasi timp
 router.route('/addProjects').post(async (req, res) => {
     try {
-        const newProjects = await Project.bulkCreate(req.body);
+        const newProjects = await Project.bulkCreate(req.body, {validate: true});
         res.status(200).json(newProjects);
     } catch (error) {
         console.log(error)

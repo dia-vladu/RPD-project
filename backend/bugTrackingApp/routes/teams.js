@@ -41,17 +41,17 @@ router.route('/getTeams').get(async (req, res) => {
     }
 })
 
-//Metoda GET <=> Afiseaza toti membrii unei echipe selectate dupa id
+//Metoda GET <=> Afiseaza toti membrii unei echipe selectate dupa id - MERGE
 router.route('/getTeam/:id/members').get(checkId, async (req, res) => {
     try {
         const team = await Team.findByPk(req.params.id);
         if (team) {
-            const members = Student.findAll({
+            const members = await Student.findAll({
                 where: {
-                    TeamId: req.params.id
+                    EchipaId: req.params.id
                 }
             })
-            if((await members).length > 0){
+            if(members.length > 0){
                 res.status(200).json(members);
             }else{
                 res.status(404).json({ error: `Team with id ${req.params.id} does not have any members!` })
@@ -61,6 +61,7 @@ router.route('/getTeam/:id/members').get(checkId, async (req, res) => {
         }
     } catch (error) {
         res.status(500).json(error)
+        console.log(error)
     }
 })
 
@@ -78,7 +79,7 @@ router.route('/addTeam').post(async (req, res) => {
 //Metoda POST <=> Adauga mai multe echipe in acelasi timp - MERGE
 router.route('/addTeams').post(async (req, res) => {
     try {
-        const newTeams = await Team.bulkCreate(req.body);
+        const newTeams = await Team.bulkCreate(req.body, {validate: true});
         res.status(200).json(newTeams);
     } catch (error) {
         console.log(error)

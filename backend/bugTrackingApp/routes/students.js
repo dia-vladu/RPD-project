@@ -78,7 +78,7 @@ router.route('/addStudent').post(async (req, res) => {
 router.route('/addStudents').post(async (req, res) => {
     try {
         console.log(req.body);
-        const newStudents = await Student.bulkCreate(req.body);
+        const newStudents = await Student.bulkCreate(req.body, {validate: true});
         res.status(200).json(newStudents);
     } catch (error) {
         console.log(error)

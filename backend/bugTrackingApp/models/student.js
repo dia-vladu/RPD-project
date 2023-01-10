@@ -57,10 +57,15 @@ const Student = sequelize.define(
             values: ['F', 'M']
         },
         data_nasterii: {
-            type: DataTypes.DATEONLY, //format: YYYY/MM/DD
+            type: DataTypes.DATEONLY, //default format: YYYY/MM/DD
             allowNull: true,
             validate: {
                 isDate: true //only allow date strings
+            // },
+            //nu-i place fct asta => se panicheaza si da eroare 500 daca incercsa apelez getStudents
+            // get: function () { //format: DD/MM/YYYY
+            //     return this.getDataValue('data_nasterii').toLocaleString('en-GB', { timeZone: 'UTC' });
+            // }
             }
         },
         facultate: {

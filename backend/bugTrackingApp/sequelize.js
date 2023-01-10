@@ -11,7 +11,7 @@ const sequelize = new Sequelize({
 //                          (which columns it has, what are their data types, etc), and then performs the 
 //                          necessary changes in the table to make it match the model.
 //sequelize.sync() - automatically synchronize all models. 
-sequelize.sync({ alter: true }).then( () => {
+sequelize.sync().then( () => {
     console.log("All models were syncronized successfully!");
 })
 
