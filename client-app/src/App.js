@@ -2,6 +2,7 @@ import Wrapper from './Wrapper';
 import { useLocation, Routes, Route } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import NewBugPage from './NewBugPage';
+import RegisterPage from './RegisterPage';
 
 function App() {
   let location = useLocation();
@@ -9,8 +10,9 @@ function App() {
   return (
     <div className="App">
       {location.pathname === "/login" && <LoginPage />}
-      {location.pathname !== "/login" && location.pathname !== "/newbug" && <Wrapper />}
+      {location.pathname !== "/login" && location.pathname !== "/newbug" && location.pathname !== "/register" && <Wrapper />}
       {location.pathname === "/newbug" && <NewBugPage />}
+      {location.pathname === "/register" && <RegisterPage />}
     </div>
   );
 }

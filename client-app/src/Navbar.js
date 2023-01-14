@@ -21,8 +21,6 @@ function Navbar() {
                 <button className="navbarButtons" id="menuLogin" onClick={() => {navigate("/login")}}>Login</button>
                 <button className="navbarButtons" id="menuProjects" onClick={() => {navigate("/projects")}}>Projects</button>
                 <button className="navbarButtons" id="menuMyTasks" onClick={() => {navigate("/myTasks")}}>My Tasks</button>
-                {/* <button className="navbarButtons" id="menuNewBug" onClick={() => {navigate("/newbug")}}>New Bug</button> */}
-                <button className="navbarButtons" id="menuRegister" onClick={() => {navigate("/register")}}>Register</button>
             </div>
         </div>
     )

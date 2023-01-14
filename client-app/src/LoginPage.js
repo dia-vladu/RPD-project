@@ -3,7 +3,6 @@ import './LoginPage.css';
 import { useEffect, useState } from "react"
 import { useNavigate, createSearchParams } from 'react-router-dom';
 import logo from './images/bugLogo.png';
-import Student from './Student';
 
 const SERVER = 'http://localhost:8080/api'
 
@@ -37,7 +36,7 @@ function LoginPage() {
                         <input className='loginTextField' id="username" type={"text"} />
 
                         <label className='loginLabel' for="password">Password</label>
-                        <input className='loginTextField' id="password" type={"text"} />
+                        <input className='loginTextField' id="password" type={"password"} />
 
                         <input className='loginButton' id="loginButton" type="reset" value="Sign in" onClick={() => {
                             // const studentsArray = Object.entries(students).map((student) => {
@@ -77,6 +76,9 @@ function LoginPage() {
                                 }
                             });
                         }} />
+                        <input className='loginButton' id="registerButton" type="button" value="Register" onClick={() => {
+                            navigate("/register");
+                        }}></input>
                     </form>
                 </div>
             </div>
