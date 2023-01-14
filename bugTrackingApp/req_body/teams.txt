@@ -1,0 +1,11 @@
+[
+    {
+        "nume": "RPD"
+    },
+    {
+        "nume": "CodeChicks"
+    },
+    {
+        "nume": "Anonimii"
+    }
+]

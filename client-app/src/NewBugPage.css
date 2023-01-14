@@ -1,0 +1,86 @@
+option{
+    font-size: 20px;
+    padding: 3px;
+    margin-bottom: 40px;
+}
+
+.severityLevels {
+    font-size: 20px;
+    width:500px;
+    padding: 3px;
+    margin-bottom: 40px;
+    float:left;
+    border-radius:5px;
+}
+
+.projectNames{
+    font-size: 20px;
+    width:500px;
+    padding: 3px;
+    margin-bottom: 40px;
+    float:left;
+    border-radius:5px;
+}
+
+label{
+    font-weight:bold;
+    font-size:28px;
+    margin-right:10px;
+    float:left;
+}
+
+input[name="inputType"] {
+    width:500px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    float:left;
+}
+
+input[name="inputDesc"] {
+    width:500px;
+    height:50px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    /* padding:30px; */
+}
+
+input[name="linkcommit"] {
+    width:500px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    float:left;
+}
+
+#btnReport{
+    margin-left: 80px;
+    height:40px;
+    width:300px;
+    border-radius:5px;
+    border:0;
+    background-color:#006BD6 ;
+    cursor:pointer;
+    font-weight: border;
+    color:white;
+    border-radius:5px;
+    font-size:20px;
+    position: relative;
+}
+
+.line{
+    width:500%;
+    border-top: 1px solid black;
+}
+
+.background {
+    background-color: #F3F4F6;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 20px;
+    /* justify-content: space-evenly; */
+    align-content: space-around;
+} 
+  

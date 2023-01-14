@@ -1,0 +1,40 @@
+.navbar {
+  position: absolute;
+  background-color:#1F2937;
+  border-bottom: 5px solid whitesmoke;
+  width: 250px;
+  height: 100%;
+}
+  
+.containerNavbarButtons {
+  margin-top: 20px;
+}
+
+.containerLogo {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+  
+.navbarButtons {
+  text-align: left;
+  padding: 10px 25px 15px 30px;
+  width: 250px;
+  height: 55px;
+  /* margin-bottom: 50px; */
+  border: 0px;
+  outline: none;
+  font-family: 'Tahoma';
+  font-size: 15px;
+  background-color: transparent;
+  /* border-bottom: 3px solid rgba(0, 0, 0, 0.156); */
+  /* border-radius: 0.5rem; */
+  color: white;
+}
+  
+.navbarButtons:hover{
+  background-color: #111827;
+  /* font-size: 200%; */
+}

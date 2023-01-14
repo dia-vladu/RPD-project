@@ -1,0 +1,32 @@
+.tasks {
+    background-color: #F3F4F6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task {
+    width: 80%;
+    border: 1px solid #9CA3AF;
+    border-radius: 0.3rem;
+}
+
+thead {
+    border-bottom-width: 2px;
+}
+
+td {
+    text-align: center;
+    margin-left: 10px;
+}
+
+td.link {
+    white-space: nowrap;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+}

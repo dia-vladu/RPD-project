@@ -1,0 +1,56 @@
+[
+    {
+        "username": "Floricica",
+        "password": "flo2022",
+        "nume": "Prisacariu",
+        "prenume": "Gabriela",
+        "email": "gabi@gmail.com",
+        "tip_user": "MP",
+        "gen": "F",
+        "data_nasterii": "1994/12/20",
+        "facultate": "Politehnica",
+        "EchipaId": 1
+    },
+    {
+        "username": "Ninja101",
+        "password": "ThisIsMyPassword",
+        "nume": "Smith",
+        "prenume": "John",
+        "email": "smthj@yahoo.com",
+        "tip_user": "TST",
+        "gen": "M"
+    },
+    {
+        "username": "User1",
+        "password": "jbkjhbk",
+        "nume": "Becali",
+        "prenume": "Gigi",
+        "email": "BossuLaBani@gmail.com",
+        "tip_user": "MP",
+        "gen": "M",
+        "data_nasterii": "1985/12/20",
+        "facultate": "CSIE",
+        "EchipaId": 1
+    },
+    {
+        "username": "HappyLama",
+        "password": "436sdrgft7765",
+        "nume": "Euescu",
+        "prenume": "Eulet",
+        "email": "eu@gmail.com",
+        "tip_user": "MP",
+        "data_nasterii": "1999/12/09",
+        "EchipaId": 2
+    },
+    {
+        "username": "TheBestHacker",
+        "password": "dskvjb78bkj ",
+        "nume": "Musch",
+        "prenume": "Elon",
+        "email": "i_own_twitter@gmail.com",
+        "tip_user": "TST",
+        "gen": "M",
+        "data_nasterii": "1988/11/11",
+        "facultate": "ASE"
+    }
+]

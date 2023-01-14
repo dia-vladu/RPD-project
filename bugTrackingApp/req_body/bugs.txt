@@ -1,0 +1,93 @@
+[
+    {
+        "severitate": "1",
+        "prioritate": "2",
+        "link_commit": "https://github.com/commit12/f36e3c",
+        "status": "Rezolvat",
+        "StudentId": 1,
+        "ProiectId": 7,
+        "id_MP": 3
+    },
+    {
+        "severitate": "3",
+        "prioritate": "3",
+        "link_commit": "https://github.com/commit3/rtdfg5",
+        "status": "Nerezolvat",
+        "StudentId": 1,
+        "ProiectId": 2
+    },
+    {
+        "severitate": "2",
+        "prioritate": "1",
+        "link_commit": "https://github.com/commit11/ggg090",
+        "status": "Nerezolvat",
+        "StudentId": 4,
+        "ProiectId": 2,
+        "id_MP": 3
+    },
+    {
+        "severitate": "3",
+        "prioritate": "3",
+        "link_commit": "https://github.com/commit7/ghfjtf",
+        "status": "In Progres",
+        "StudentId": 1,
+        "ProiectId": 4,
+        "id_MP": 4
+    },
+    {
+        "severitate": "3",
+        "prioritate": "3",
+        "link_commit": "https://github.com/commit10/34sh56",
+        "status": "Nerezolvat",
+        "descriere": "I don't like the css styling for the submit button.",
+        "StudentId": 3,
+        "ProiectId": 2,
+        "id_MP": 1
+    },
+    {
+        "severitate": "1",
+        "prioritate": "2",
+        "link_commit": "https://github.com/commit4/gfju89",
+        "status": "Rezolvat",
+        "StudentId": 3,
+        "ProiectId":3
+    },
+    {
+        "severitate": "2",
+        "prioritate": "2",
+        "link_commit": "https://github.com/commit9/juikgg",
+        "status": "Rezolvat",
+        "descriere": "The sort function misses the ruturn statement.",
+        "StudentId": 2,
+        "ProiectId":6
+    },
+    {
+        "severitate": "1",
+        "prioritate": "2",
+        "link_commit": "https://github.com/commit6/dfghy9",
+        "status": "In progres",
+        "descriere": "Variables types mismatch.",
+        "StudentId": 1,
+        "ProiectId": 6,
+        "id_MP": 3
+    },
+    {
+        "severitate": "1",
+        "prioritate": "1",
+        "link_commit": "https://github.com/commit21/kjjudr",
+        "status": "Rezolvat",
+        "descriere": "I found an untreated error.",
+        "StudentId": 4,
+        "ProiectId":6
+    },
+    {
+        "severitate": "3",
+        "prioritate": "1",
+        "link_commit": "https://github.com/commit3/nhgc5d",
+        "status": "Rezolvat",
+        "descriere": "For value 5 I receive FATAL ERROR",
+        "StudentId": 5,
+        "ProiectId": 7,
+        "id_MP": 1
+    }
+]

@@ -1,0 +1,8 @@
+.projects {
+    background-color: #F3F4F6;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    /* justify-content: space-evenly; */
+    align-content: space-around;
+}

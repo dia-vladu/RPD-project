@@ -1,0 +1,67 @@
+label{
+    font-weight:bold;
+    font-size:20px;
+    float:left;
+    text-align: left;
+}
+
+#changePic{
+    height:40px;
+    width:80px;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    font-weight: border;
+    font-weight:bold;
+  
+}
+
+
+input[name="inputName"] {
+    width:500px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    float:left;
+
+}
+
+input[name="lastName"] {
+    width:500px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    float:left;
+
+}
+
+input[name="email"] {
+    width:500px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    float:left;
+}
+
+input[name="username"] {
+    width:500px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    float:left;
+
+}
+
+#btnsaveChanges{
+    height:50px;
+    width:300px;
+    border-radius:5px;
+    border:0;
+    background-color:#006BD6 ;
+    cursor:pointer;
+    font-weight: border;
+    color:white;
+    border-radius:5px;
+    font-size:20px;
+    position: absolute;
+}

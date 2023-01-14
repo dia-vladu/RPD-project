@@ -1,0 +1,75 @@
+.header {
+    height: 80px;
+    padding: 10px 20px 10px 10px;
+}
+
+p {
+    margin: 0;
+}
+
+p.pageLocation {
+    color: #6B7280;
+    align-self: left;
+}
+
+p.greetUser {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    /* display: inline-block; */
+}
+
+span.topSpan {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span.bottomSpan {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divButoane {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-direction: row-reverse;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #9CA3AF;
+    padding: none;
+    margin: 0;
+}
+
+p.pageTitle {
+    /* float: left; */
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.newProjectBtn {
+    align-content: flex-end;
+    appearance: auto;
+    background-color: #006BD6;
+    color: #F3F4F6;
+    border: none;
+    height: 30px;
+    border-radius: 0.3rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}

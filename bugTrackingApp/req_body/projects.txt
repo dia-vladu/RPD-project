@@ -1,0 +1,41 @@
+[
+    {
+        "id_repo": 1,
+        "nume": "DataVisuals",
+        "EchipaId": 1
+    },
+    {
+        "id_repo": 2,
+        "nume": "Teme TWeb",
+        "descriere": "These are all the homeworks we had this semester.",
+        "EchipaId": 1
+    },
+    {
+        "id_repo": 3,
+        "nume": "Glovo app",
+        "descriere": "A food delivery app that simulates Glovo.",
+        "EchipaId": 2
+    },
+    {
+        "id_repo": 4,
+        "nume": "Bug Traking",
+        "EchipaId": 3
+    },
+    {
+        "id_repo": 5,
+        "nume": "Virtual Calculator",
+        "EchipaId": 1
+    },
+    {
+        "id_repo": 6,
+        "nume": "Banking App",
+        "descriere": "Final project for ING internship made in java.",
+        "EchipaId": 2
+    },
+    {
+        "id_repo": 7,
+        "nume": "Asteroid",
+        "descriere": "You can move the spaceship by pressing up, down, right, left arrows.",
+        "EchipaId": 3
+    }
+]
