@@ -27,8 +27,7 @@ function Tasks() {
     //     return (data.username)
     // }
 
-    const [students, setStudents] = useState([])
-    let id;
+    const [students, setStudents] = useState([]);
 
     const getStudents = async (id) => {
         const response = await fetch(`${SERVER}/getStudent/${id}`)

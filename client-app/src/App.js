@@ -1,5 +1,5 @@
 import Wrapper from './Wrapper';
-import { useLocation, Routes, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import NewBugPage from './NewBugPage';
 import RegisterPage from './RegisterPage';

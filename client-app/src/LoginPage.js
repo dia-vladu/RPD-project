@@ -18,8 +18,6 @@ function LoginPage() {
         setStudents(data);
     }
 
-    // students.map(e => <Student key={e.id} item={e} />);
-
     useEffect(() => {
         getStudents()
     }, []);
@@ -28,7 +26,6 @@ function LoginPage() {
         <div className='loginPageBody'>
             <div className='formBoxLogin'>
                 <div className='loginFrom'>
-                    {/* <p className='logoStyle'>Logo HERE</p> */}
                     <img id="logoLoginPage" src={logo} style={{ width: 40, height: 40 }} />
                     <p className='loginFormTitle'>Sign in into your account </p>
                     <form>

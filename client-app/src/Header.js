@@ -1,13 +1,9 @@
 import './Header.css'
-// import { useNavigate, useParams } from "react-router-dom"
 import userPicture from './images/profilePhoto2.jpg'
 import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
-import Button from './Button';
 import React from 'react';
-import LandingPage from './LandingPage';
 
-function Header(props) {
-    const { item } = props;
+function Header() {
     const [searchparams] = useSearchParams();
 
     var stringHello = "Hello, " + searchparams.get('username');
@@ -19,7 +15,6 @@ function Header(props) {
     var str = pageLocation;
     pageLocation = pageLocation.charAt(0).toUpperCase() + str.slice(1);
 
-    var span = document.querySelector('#bottomSpan');
     var btn = document.createElement('button');
     btn.id = 'btnSpan';
     btn.innerHTML = 'New Project';
@@ -27,21 +22,16 @@ function Header(props) {
         console.log(currentPath.pathname);
     });
 
-    function Button(props) {
-        return React.createElement('button', { onClick: props.handleClick }, props.name);
-    }
-
     return (
         <div className="header">
             <span className='topSpan'>
                 <p className="pageLocation">Home</p>
                 <p className="greetUser">
                     {stringHello}
-                    <img id="logo" src={userPicture} alt="This is a profile picture." className="profilePicture" />
+                    <img id="logo" src={userPicture} alt="profile_pic" className="profilePicture" />
                 </p>
             </span>
             <hr />
-            {/* && <Button value='test'/> */}
             <span className='bottomSpan' id="bottomSpan">
                 <p className="pageTitle">{pageLocation}</p>
                 <div className='divButoane'>

@@ -18,7 +18,7 @@ function Project(props) {
     }
 
     useEffect(() => {
-        getBugs()
+        getBugs();
     }, [])
 
     // bugs.map(e => <Project key={e.id} bug={e} />)

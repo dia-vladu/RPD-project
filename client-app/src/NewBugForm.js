@@ -72,9 +72,9 @@ function NewBugForm(props) {
                 <label id="labelsvr">GRAD DE SEVERITATE</label>
                 <br/>
                 <select id="format" className="severityLevels" onChange={(evt) => setSeverity(evt.target.value)}>
-                <option id="severity1">1</option>
-                <option id="severity2">2</option>
-                <option id="severity3">3</option>
+                    <option id="severity1">1</option>
+                    <option id="severity2">2</option>
+                    <option id="severity3">3</option>
                 </select>
                 <br/>
                 <label id="labelDesc">DESCRIERE BUG</label>
