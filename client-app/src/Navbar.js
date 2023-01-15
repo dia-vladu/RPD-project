@@ -1,12 +1,12 @@
 import React from 'react'
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import logo from './images/bugLogo.png';
 
 function Navbar() {
     const navigate = useNavigate();
     
-    var currentPath = useLocation();
+    // var currentPath = useLocation();
     // console.log('hash', currentPath.hash);
     // console.log('pathname', currentPath.pathname);
     // console.log('search', currentPath.search);

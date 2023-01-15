@@ -47,10 +47,6 @@ function SettingsPage(){
             <br/>
             <button id="btnsaveChanges">SAVE CHANGES</button>
             </div>
-           
-                 
-       
-            
     );
 }
 

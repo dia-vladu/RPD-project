@@ -20,16 +20,14 @@ function Tasks() {
 
     console.log(tasks);
 
-    const username = async (id) => {
-        const response = await fetch(`${SERVER}/getStudent/${id}`)
-        const data = await response.json()
-        console.log(data.username, typeof data.username)
-    }
+    // async function getStudName(id){
+    //     const response = await fetch(`${SERVER}/getStudent/${id}`)
+    //     const data = await response.json()
+    //     console.log(data.username, typeof data.username)
+    //     return (data.username)
+    // }
 
-
-
-    const [student, setStudents] = useState([])
-    let id;
+    const [students, setStudents] = useState([]);
 
     const getStudents = async (id) => {
         const response = await fetch(`${SERVER}/getStudent/${id}`)

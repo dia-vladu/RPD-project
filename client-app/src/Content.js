@@ -1,7 +1,7 @@
 import './Content.css'
 import Projects from './Projects';
 import Header from './Header';
-import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import LandingPage from './LandingPage';
 import MyTasks from './MyTasks';
@@ -10,11 +10,8 @@ import NewProjectsPage from './NewProjectsForm';
 import NewBugPage from './NewBugPage';
 
 function Content() {
-    let location = useLocation();
-
     return (
         <div className="content">
-            {/* {location.pathname !== "/login" && <Header/>} */}
             <Header />
             <Routes>
                 <Route path="/projects" element={<Projects />} />
