@@ -8,9 +8,9 @@ function NewBugForm(props) {
 
     const [searchparams] = useSearchParams();
 
-    const {onAdd} = props;
+    const { onAdd } = props;
     const [descriere, setDescription] = useState('');
-    const [severitate, setSeverity] = useState('1', '2' , '3');
+    const [severitate, setSeverity] = useState('1', '2', '3');
     const [link_commit, setLink] = useState('');
     const prioritate = 3;
     const status = 'Nerezolvat';
@@ -47,9 +47,9 @@ function NewBugForm(props) {
     var projectsArray = (projects.map(project => {
         return project;
     }));
-    
+
     projectsArray.forEach(element => {
-        if(dropdown.length < projectsArray.length){
+        if (dropdown.length < projectsArray.length) {
             var option = document.createElement('option');
             option.text = element.nume;
             dropdown.add(option);
@@ -58,73 +58,61 @@ function NewBugForm(props) {
 
     // console.log(projectsArray);
 
-    return(
-        <div className="bodyNewBugPage">
-            <br/>
-            <div className='background'>
+    return (
+        <div className="background">
+            <div className="newbugform">
                 <label id="projectName">PROJECT NAME</label>
-                <br/>
-                <select id="projectNames" className="projectNames" onChange={function verificareDropdown(){
-                    
+                <select id="projectNames" className="projectNames" onChange={function verificareDropdown() {
+
                 }}>
                 </select>
-                <br/>
                 <label id="labelsvr">GRAD DE SEVERITATE</label>
-                <br/>
                 <select id="format" className="severityLevels" onChange={(evt) => setSeverity(evt.target.value)}>
-                <option id="severity1">1</option>
-                <option id="severity2">2</option>
-                <option id="severity3">3</option>
+                    <option id="severity1">1</option>
+                    <option id="severity2">2</option>
+                    <option id="severity3">3</option>
                 </select>
-                <br/>
                 <label id="labelDesc">DESCRIERE BUG</label>
-                <br/>
                 <input id="descriereBug" type="text" name="inputDesc" placeholder='Please insert the description' onChange={(evt) => setDescription(evt.target.value)} />
-                <br/>
-                <br/>
                 <label id="labelDesc">LINK COMMIT</label>
-                <br/>
-                <input id="linkCommit" type="text" name="linkcommit" placeholder='Please insert the link commit' onChange={(evt) => setLink(evt.target.value)}/>
-                <br/>
-                <br/>
-                <button id="btnReport" onClick={function() {
-                    if(checkValues()){
+                <input id="linkCommit" type="text" name="linkcommit" placeholder='Please insert the link commit' onChange={(evt) => setLink(evt.target.value)} />
+                <button id="btnReport" onClick={function () {
+                    if (checkValues()) {
                         alert('S-a inregistrat bug-ul! Multumim!');
                         projectsArray.forEach(element => {
-                            if(dropdown.value === element.nume){
+                            if (dropdown.value === element.nume) {
                                 ProiectId = element.id;
                             }
                         });
                         addBug();
                     }
                 }}>SEND REPORT</button>
-                <br/>
             </div>
         </div>
     );
 
-    function isValidURL(urlString){
+    function isValidURL(urlString) {
         try {
             return Boolean(new URL(urlString));
         }
-        catch(e){
+        catch (e) {
             return false;
         }
     }
 
-    function checkValues(){
+    function checkValues() {
         var descriereTextField = document.querySelector('#descriereBug');
         var urlTextField = document.querySelector('#linkCommit');
 
-        if(descriereTextField.value.length === 0){
+        if (descriereTextField.value.length === 0) {
             alert("Nu ati introdus descrierea!");
             return false;
         }
 
-        if(urlTextField.value.length === 0){
+        if (urlTextField.value.length === 0) {
             alert("Nu ati introdus link-ul!");
             return false;
-        } else if(!isValidURL(urlTextField.value)){
+        } else if (!isValidURL(urlTextField.value)) {
             alert("Link-ul este invalid!");
             return false;
         }
