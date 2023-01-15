@@ -20,14 +20,15 @@ function Tasks() {
 
     console.log(tasks);
 
-    // async function getStudName(id){
-    //     const response = await fetch(`${SERVER}/getStudent/${id}`)
-    //     const data = await response.json()
-    //     console.log(data.username, typeof data.username)
-    //     return (data.username)
-    // }
+    const username = async (id) => {
+        const response = await fetch(`${SERVER}/getStudent/${id}`)
+        const data = await response.json()
+        console.log(data.username, typeof data.username)
+    }
 
-    const [students, setStudents] = useState([])
+
+
+    const [student, setStudents] = useState([])
     let id;
 
     const getStudents = async (id) => {
@@ -40,10 +41,6 @@ function Tasks() {
         getStudents();
     }, []);
 
-    // var studentsArray = (students.map(student => {
-    //     return student;
-    // }));
-    console.log(students);
 
     return (
         <div className="tasks">
@@ -59,16 +56,19 @@ function Tasks() {
                     </tr>
                 </thead>
                 <tbody>
-                    {/* {tasks.forEach((task) => {
-                        console.log('task: ', task)
-                        React.createElement(
-                            'tr',
-                            task[0],
-                            console.log('Am facut un tr ', Object.values(task)[5])
-                        )
-                    })} */}
 
                     {tasks.map((val, key) => {
+                        async function getStudName() {
+                            try {
+                                const response = await fetch(`${SERVER}/getStudent/${val.StudentId}`)
+                                const data = await response.json()
+                                console.log(data.username, typeof data.username)
+                                return (data.username)
+                            }
+                            catch (err) {
+                                console.log(err);
+                            }
+                        }
                         return (
                             <tr key={key}>
                                 <td>{val.id}</td>
@@ -76,9 +76,9 @@ function Tasks() {
                                 <td>{val.prioritate}</td>
                                 <td className='link'>{val.link_commit}</td>
                                 <td>{val.status}</td>
-                                {/* {id = val.StudentId}
-                                <td>{students}</td> */}
-                                {/* <td>{getStudName(val.StudentId)}</td> */}
+                                {/* {id = val.StudentId} */}
+                                {/* <td>{students}</td> */}
+                                {/* <td>{getStudName()}</td> */}
                             </tr>
                         )
                     })}
@@ -93,50 +93,6 @@ function Tasks() {
         </div>
 
     )
-
-    // var ProductRow = React.createClass({
-    //     render: function () {
-    //       return (
-    //         <tr>
-    //           <td>{this.props.product.name}</td>
-    //           <td>{this.props.product.company_id}</td>
-    //           <td>{this.props.product.price}</td>
-    //         </tr>
-    //       );
-    //     }
-    //   });
-
-
-    //   var ProductTable = React.createClass({
-    //     render: function () {
-    //       var rows = [];
-
-    //       this.props.data.forEach(function(product) {
-    //         rows.push(<ProductRow product={product} key={product.id} />);
-    //       });
-
-    //       return (
-    //         <div className="products">
-
-    //           <h2 className="title">List of products</h2>
-
-    //           <table className="table table-bordered">
-    //             <thead>
-    //               <tr>
-    //                 <th>Name</th>
-    //                 <th>Company</th>
-    //                 <th>RRP</th>
-    //               </tr>
-    //             </thead>
-    //             <tbody>
-    //               {rows}
-    //             </tbody>
-    //           </table>
-
-    //         </div>
-    //       );
-    //     }
-    //   });
 }
 
 export default Tasks
