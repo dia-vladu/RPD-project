@@ -1,7 +1,8 @@
 .tasks {
     background-color: #F3F4F6;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -28,5 +29,5 @@ td.link {
     width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
-    position: absolute;
+    position: relative;
 }
