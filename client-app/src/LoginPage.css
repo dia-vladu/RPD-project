@@ -66,6 +66,10 @@ form {
     border-radius: 0.3rem;
 }
 
+#registerButton {
+    margin-top: 15px;
+}
+
 .loginButton:hover{
     background-color: #1F2937;
 }
