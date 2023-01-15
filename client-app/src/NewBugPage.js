@@ -23,7 +23,7 @@ function NewBugPage() {
     }
 
     return (
-        <div className='bodyNewBugPage'>
+        <div className='body'>
             <Header />
             <NewBugForm onAdd={addBug} />
         </div>
