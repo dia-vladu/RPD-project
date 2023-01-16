@@ -24,6 +24,16 @@ function Project(props) {
     // bugs.map(e => <Project key={e.id} bug={e} />)
     console.log(JSON.stringify(bugs));
 
+    function deleteProject(id){
+        fetch(`${SERVER}/deleteProject/${id}`, {
+            method: 'DELETE'
+        }).then((result) => {
+            result.json().then(resp => {
+                console.warn(resp)
+            })
+        })
+    }
+
     return (
         <div className="project">
             <div className="details">
@@ -35,10 +45,11 @@ function Project(props) {
                     <div class="menu-project">
                         <div class="dropdown-container" >
                         {/* tabindex="-1" */}
-                            <select class="three-dots">
+                            {/* <select class="three-dots">
                                 <option>Rename</option>
                                 <option>Delete</option>
-                            </select>
+                            </select> */}
+                            <button onClick={() => deleteProject(item.id)}>Delete</button>
                         </div>
                     </div>
                 </div>

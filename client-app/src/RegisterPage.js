@@ -1,5 +1,5 @@
 import React from 'react';
-import './RegisterPage.css';
+// import './RegisterPage.css';
 import RegisterForm from './RegisterForm';
 
 const SERVER = 'http://localhost:8080/api'

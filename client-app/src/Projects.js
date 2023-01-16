@@ -23,10 +23,12 @@ function Projects() {
     }, [])
 
     return (
-        <div className="projects">
-            {
-                projects.map(e => <Project key={e.id} item={e} />)
-            }
+        <div className="backgroundProjects">
+            <div className="projects">
+                {
+                    projects.map(e => <Project key={e.id} item={e} />)
+                }
+            </div>
         </div>
         /* {<button onClick={() => {
             navigate("/students")

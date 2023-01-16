@@ -1,8 +1,15 @@
 #projectName{
-    margin-top: auto;
     font-weight: bold;
     font-size:20px;
     float:left;
+}
+
+.projectForm {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .newProj {
@@ -10,73 +17,36 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     padding-top: 20px;
+    width: 100%;
+    height: 100%;
     /* justify-content: space-evenly; */
     /* align-content: space-around; */
 }
 
 #labelDesc{
-    margin-top: auto;
     font-weight: bold;
     font-size:20px;
-    float:left; 
-}
-
-/* option{
-    font-size: 20px;
-    padding: 3px;
-    margin-bottom: 40px;
-} */
-
-.severityLevels {
-    font-size: 20px;
-    width:500px;
-    padding: 3px;
-    margin-bottom: 40px;
-    float:left;
-    border-radius:5px;
-}
-
-.projectNames{
-    font-size: 20px;
-    width:500px;
-    padding: 3px;
-    margin-bottom: 40px;
-    float:left;
-    border-radius:5px;
-}
-
-#labelsvr{
-    font-weight:bold;
-    font-size:20px;
-    margin-right:10px;
-    float:left;
-}
-
-input[name="inputType"] {
-    width:500px;
-    font-size: 18px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    float:left;
-
+    /* float:left;  */
 }
 
 input[name="inputDesc"] {
-    width:500px;
-    height:100px;
+    width:98%;
+    height: 250px;
     font-size: 18px;
     border-radius: 5px;
     background-color: #f2f2f2;
-    /* padding:30px; */
+    margin-bottom: 0px;
 }
 
-input[name="linkcommit"] {
-    width:500px;
-    font-size: 18px;
+input[name="inputProjName"] {
+    width:98%;
+    font-size: 15px;
     border-radius: 5px;
     background-color: #f2f2f2;
-    float:left;
+    margin-bottom: 20px;
 }
 
 #btnReport{

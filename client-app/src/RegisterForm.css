@@ -1,0 +1,115 @@
+.formBoxRegister {
+    /* align-items: center; */
+    /* margin-left: 41.5%; */
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    /* padding: 30px; */
+    /* background-color: #9CA3AF; */
+}
+
+.register {
+    /* position: relative; */
+    /* display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    border: 1px solid black; */
+    background-image: linear-gradient(to bottom right, #21648a, #F3F4F6);
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: column;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.registerForm {
+    /* margin: 100px; */
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: 0; */
+    background-color: #F3F4F6;
+    margin-bottom: 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registerButton {
+    font-size: 15px;
+    font-family: Tahoma;
+    color: white;
+    /* -webkit-text-stroke: 0.8px black; */
+    background-color: #006BD6;
+    border: none;
+    /* border-radius: 10%; */
+    /* padding: 7px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* margin-left: -60px; */
+    width: 30%;
+    height: 30px;
+    border-radius: 0.3rem;
+    align-self: center;
+}
+
+.registerButton:hover {
+    background-color: #1F2937;
+}
+
+.grupSelect {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.registerTextField {
+    font-size: 14px;
+    width: 60%;
+    /* padding: 3px; */
+    margin-bottom: 20px;
+}
+
+.elementeForm {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 20%;
+}
+
+.registerSelect {
+    margin-bottom: 20px;
+}
+
+.registerOption {
+    font-size: 15px;
+    padding: 3px;
+}
+
+.registerOption {
+    text-align: center;
+}
+
+.registerLabel {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Helvetica;
+    margin-bottom: 5px;
+}
+
+h1 {
+    margin-bottom: 0;
+}

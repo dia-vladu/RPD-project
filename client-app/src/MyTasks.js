@@ -39,6 +39,18 @@ function Tasks() {
         getStudents();
     }, []);
 
+    const [bugs, setBugs] = useState([]);
+
+    const getBugs = async () => {
+        const response = await fetch(`${SERVER}/getBugs`)
+        const data = await response.json()
+        setBugs(data);
+    }
+
+    useEffect(() => {
+        getBugs();
+    }, []);
+
 
     return (
         <div className="tasks">
@@ -50,7 +62,7 @@ function Tasks() {
                         <th>Prioritate</th>
                         <th>Link commit</th>
                         <th>Status</th>
-                        <th>Nume TST</th>
+                        <th>Id TST</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -74,6 +86,7 @@ function Tasks() {
                                 <td>{val.prioritate}</td>
                                 <td className='link'>{val.link_commit}</td>
                                 <td>{val.status}</td>
+                                <td>{val.StudentId}</td>
                                 {/* {id = val.StudentId} */}
                                 {/* <td>{students}</td> */}
                                 {/* <td>{getStudName()}</td> */}
@@ -84,7 +97,7 @@ function Tasks() {
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="3">Numar persoane: 2</td>
+                        <td colspan="3">Numar buguri: {bugs.length}</td>
                     </tr>
                 </tfoot>
             </table>
